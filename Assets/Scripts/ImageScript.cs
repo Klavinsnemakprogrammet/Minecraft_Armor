@@ -17,8 +17,33 @@ public class ImageScript : MonoBehaviour
     public Sprite[] soriteArray;
     public GameObject scaleSlider;
     public GameObject rotationSlider;
+    public GameObject widthSlider;
+    public GameObject heightSlider;
 
 
+    public void ChangeWidth()
+
+    {
+
+        float currentWidth = widthSlider.GetComponent<Slider>().value;
+
+        Vector3 currentScale = imageField.transform.localScale;
+
+        imageField.transform.localScale = new Vector3(currentWidth, currentScale.y, currentScale.z);
+
+    }
+
+    public void ChangeHeight()
+
+    {
+
+        float currentHeight = heightSlider.GetComponent<Slider>().value;
+
+        Vector3 currentScale = imageField.transform.localScale;
+
+        imageField.transform.localScale = new Vector3(currentScale.x, currentHeight, currentScale.z);
+
+    }
     public void ChangeScale()
     {
         float currentScale = scaleSlider.GetComponent<Slider>().value;
