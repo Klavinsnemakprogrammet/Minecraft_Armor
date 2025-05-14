@@ -9,12 +9,17 @@ public class SceneChangeScript : MonoBehaviour
 
     public void ToUIScene()
     {
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene("Game", LoadSceneMode.Single);
 
     }
     public void ToMainMenu()
     {
-        SceneManager.LoadScene("Menu",LoadSceneMode.Single);
+        SceneManager.LoadScene("start screen",LoadSceneMode.Single);
+    }
+    public void ToSettings()
+    {
+        SceneManager.LoadScene("Settings", LoadSceneMode.Single);
+
     }
 
     public void Quit()
