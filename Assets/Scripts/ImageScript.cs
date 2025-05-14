@@ -20,6 +20,7 @@ public class ImageScript : MonoBehaviour
     public GameObject NeatheriteChest;
     public GameObject NeatherBoots;
     public GameObject NeatheriteHelmet;
+    public GameObject NeatheriteLeggings;
     public GameObject imageField;
     public Sprite[] soriteArray;
     public GameObject scaleSlider;
@@ -138,5 +139,9 @@ public class ImageScript : MonoBehaviour
     public void ToggleNeatheriteHelmet(bool value)
     {
         NeatheriteHelmet.SetActive(value);
+    }
+    public void ToggleNeatheriteLeggings(bool value)
+    {
+        NeatheriteLeggings.SetActive(value);
     }
 }
